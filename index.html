@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+ <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+ 
+</head>
+<body>
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 main-heading">
+        <div><h1>Learn to code by watching others</h1></div>
+        <div class="paragraph"><p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p></div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="trial"><h5>Try it free 7 days then $20/mo. thereafter</h5></div>
+        <div class="form email-form">
+          <form>
+            <div class="mb-3 first-name">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="text" class="form-control " id="input-firstname" placeholder="First name" pattern="[a-zA-Z'-'\s]*" required >
+              <img  class=" hide error-icon test-err" src="images/icon-error.svg" alt="">
+              <div class="firstname-err"><span class="hide test firstname-err-span"><em>First Name cannot be empty</em></span></div>
+            </div>
+            
+            <div class="mb-3 last-name">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="text" class="form-control" id="input-lastname" placeholder="Last name" pattern="[a-zA-Z'-'\s]*" required> 
+              <img  class=" hide error-icon test-err2" src="images/icon-error.svg" alt="">
+              <div class="lastname-err"><span class="hide test lastname-err-span"><em>Last Name cannot be empty</em></span></div>
+            </div>
+
+            <div class="mb-3 email">
+              <label for="exampleInputEmail1" class="form-label"></label>
+              <input type="email" class="form-control please-work" id="exampleInputEmail1" placeholder="Email Address" aria-describedby="emailHelp" required>
+              <img  class="hide error-icon test-err3" src="images/icon-error.svg" alt="">
+              <div class="email-err"><span class="hide test email-err-span"><em>Looks like this is not an email</em></span></div>
+            </div>
+
+            <div class="mb-3 password">
+              <label for="exampleInputPassword1" class="form-label"></label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              <img  class=" hide error-icon test-err4" src="images/icon-error.svg" alt="">
+              <div class="password-err"><span class="hide test password-err-span"><em>Password cannot be empty</em></span></div>
+            </div>
+
+            <button type="button" class="btn btn-primary w-100">CLAIM YOUR FREE TRIAL</button>
+
+            <div class="terms">
+              <p> By clicking the button, you are agreeing to our <span> <strong>Terms and Services</strong></span></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+   
+    </div>
+
+  </div>
+
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ladenika Peter</a>.
+    </p>
+  </footer> -->
+ 
+  
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+  
+</body>
+</html>

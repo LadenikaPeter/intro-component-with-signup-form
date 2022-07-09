@@ -1,0 +1,142 @@
+body{
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+h1{
+    font-weight: 700;
+}
+
+span{
+    color: hsl(0, 100%, 74%) ;
+}
+
+
+.main-heading{
+   align-items: center;
+   justify-content: center;
+   margin: auto 0;
+}
+.paragraph{
+    margin-top: 25px;
+}
+.trial{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px  rgba(85, 85, 85, 0.5) ;
+}
+
+h5{
+    font-size: 14px;
+    margin: auto 0;
+}
+
+form{
+    position: relative;
+}
+.email-form{
+    background-color: white;
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px rgba(85, 85, 85, 0.5);
+}
+
+.terms{
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn{
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    margin-top: 30px;
+    padding: 18px;
+   letter-spacing: 2px;
+   box-shadow: 0 3px hsl(154, 54%, 33%) ;
+}
+.btn:hover{
+    opacity: 1;
+    background-color:hsl(154, 27%, 65%) ;
+    cursor: pointer;
+    box-shadow: 0 3px hsl(154, 52%, 45%);
+}
+
+.form-control{
+    padding: 12px 12px 12px 30px;
+}
+
+::-webkit-input-placeholder{
+    font-weight: 600;
+    
+}
+
+@media only screen and (max-width:600px) {
+    body {
+      margin: 70px 70px;
+      text-align: center;
+      max-width:500px ;
+      background-image: url("images/bg-intro-mobile.png");
+      background-color:  hsl(0, 100%, 74%);
+    }
+    .paragraph{
+        
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    h1{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+  }
+
+
+  /* for errors */
+.test{
+    float: right;
+    font-size: small;
+}
+
+.invalid{
+    border:1px solid hsl(0, 100%, 74%) ;
+}
+
+.hide{
+    display: none;
+}
+
+.error-icon{
+    position: absolute;
+    right: 20px;
+}
+
+/* error icon for different fields */
+.test-err{
+    top: 35px;
+}
+.test-err2{
+    top:125px
+}
+.test-err3{
+    top:215px
+}
+.test-err4{
+    top: 305px;
+}
+
+.please::placeholder{
+    color: hsl(0, 100%, 74%) ;
+}
